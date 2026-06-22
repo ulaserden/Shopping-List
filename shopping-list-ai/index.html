@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Shopping List</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="luxury-container">
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Tema Değiştir">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+        </div>
+
+        <h2>Shopping List</h2>
+        
+        <form class="shopping-form">
+            <div class="input-group-custom">
+                <input type="text" id="item_name" placeholder="E.g. Vintage Champagne..." autocomplete="off">
+                <button type="submit" class="btn-gold">Add</button>
+            </div>
+        </form>
+
+        <div class="filter-buttons">
+            <button class="active" item-filter="all">All</button>
+            <button item-filter="incomplete">Incomplete</button>
+            <button item-filter="completed">Completed</button>
+        </div>
+
+        <ul class="shopping-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
